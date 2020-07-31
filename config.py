@@ -10,7 +10,7 @@ class Config(object):
         os.path.abspath(__file__)), 'templates')
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     APP = None
-
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://abimael:24283115@localhost:5432/app_flask_estoque'
 
 class DevelopmentConfig(Config):
     TESTING = True
